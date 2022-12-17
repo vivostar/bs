@@ -1,114 +1,127 @@
-<div id="main">
-  <div id="top-nav">
-      <nav class="navbar navbar-default navbar-static-top">
-        <div class="container main-container">
-          <div class="navbar-header navbar-nav">
-            view App.BreadcrumbsView
-          </div>
-
-          {{! right offset. don't delete me! }}
-          <ul class="nav navbar-nav navbar-right"></ul>
-
-          {{! user dropdown }}
-          <div class="top-nav-user navbar-right btn-group">
-            <button class="dropdown-toggle navbar-btn btn btn-default" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              <i class="glyphicon glyphicon-user"></i>&nbsp;users&nbsp;<span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-
-              {{! about }}
-              <li><a href="#" id="about">t app.aboutAmbari</a></li>
-              {{! about end }}
-
-              {{! manage ambari }}
-              <li>
-                    <a href="#" id="manage-ambari">
-                      t app.manageAmbari
-                    </a>
-              </li>
-            
-              {{! manage ambari end }}
-
-              {{! user settings }}
-                  <li>
-                    <a href="#">
-                      t app.settings
-                    </a>
-                  </li> 
-              {{! user settings end }}
-
-              {{! sign out }}
-                <li role="separator" class="divider"></li>
-                <li><a href="" id="sign-out" >t app.signout</a></li>
-              {{! sign out end }}
-            </ul>
-          </div>
-          {{! user dropdown end }}
-
-          {{! views menu}}
-          <div class="navbar-nav navbar-right ambari-views notifications-group">
-      
-              <i class="icon-th dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-              <ul class="notifications-dropdown row dropdown-menu">
-                <div class="popup-arrow-up"></div>
-                <div class="notifications-header col-sm-12">
-                  <div class="notifications-title">title</div>
-                </div>
-                <div class="notifications-body col-sm-12">
-                  
-                      <li>
-                        <a href="#">item.label</a>
-                      </li>
-                   
-                    <li class="disabled"><a href="javascript:void(null);">t menu.item.views.noViews</a></li>
-                 
-                </div>
-              </ul>
-  
-          </div>
-          {{!views menu end}}
-
-          <div class="navbar-nav navbar-right cluster-notifications">
-            {{! bg label }}
-            <a href="#" class="bg-label" >
-                <span class="glyphicon glyphicon-cog"></span>
-                <span id="span-bg-operation-count">
-                  t
-                </span>
-             
-            </a>
-            {{! bg label end }}
-
-              {{! new alerts label }}
-
-                <span class="notifications-group">
-                <span class="alerts-label dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                      aria-expanded="false">
-                  <span class="glyphicon glyphicon-bell"></span>
-                 
-                </span>
-                <div id="notifications-dropdown" class="dropdown-menu row">
-                  view App.AlertInstancesPopupView
-                </div>
-              </span>
-        
-          </div>
-
-          <div class="navbar-nav navbar-text navbar-right brand-wrapper">
-            {{! cluster name }}
-            <div class="cluster-name">
-         
-                <span>c</span>
-            </div>
-            {{! cluster name end }}
-          </div>
+<div id='main'>
+  <div id='top-nav'>
+    <nav class='navbar navbar-default navbar-static-top'>
+      <div class='container main-container'>
+        <div class='navbar-header navbar-nav'>
+          view App.BreadcrumbsView
         </div>
-      </nav>
+
+        {{! right offset. don't delete me! }}
+        <ul class='nav navbar-nav navbar-right'></ul>
+
+        {{! user dropdown }}
+        <div class='top-nav-user navbar-right btn-group'>
+          <button
+            class='dropdown-toggle navbar-btn btn btn-default'
+            data-toggle='dropdown'
+            aria-haspopup='true'
+            aria-expanded='false'
+            type='button'
+          >
+            <i class='glyphicon glyphicon-user'></i>&nbsp;users&nbsp;<span
+              class='caret'
+            ></span>
+          </button>
+          <ul class='dropdown-menu'>
+
+            {{! about }}
+            <li><a href='#' id='about'>t app.aboutAmbari</a></li>
+            {{! about end }}
+
+            {{! manage ambari }}
+            <li>
+              <a href='#' id='manage-ambari'>
+                t app.manageAmbari
+              </a>
+            </li>
+
+            {{! manage ambari end }}
+
+            {{! user settings }}
+            <li>
+              <a href='#'>
+                t app.settings
+              </a>
+            </li>
+            {{! user settings end }}
+
+            {{! sign out }}
+            <li role='separator' class='divider'></li>
+            <li><a href='' id='sign-out'>t app.signout</a></li>
+            {{! sign out end }}
+          </ul>
+        </div>
+        {{! user dropdown end }}
+
+        {{! views menu}}
+        <div class='navbar-nav navbar-right ambari-views notifications-group'>
+
+          <i
+            class='icon-th dropdown-toggle'
+            data-toggle='dropdown'
+            aria-haspopup='true'
+            aria-expanded='false'
+          ></i>
+          <ul class='notifications-dropdown row dropdown-menu'>
+            <div class='popup-arrow-up'></div>
+            <div class='notifications-header col-sm-12'>
+              <div class='notifications-title'>title</div>
+            </div>
+            <div class='notifications-body col-sm-12'>
+
+              <li>
+                <a href='#'>item.label</a>
+              </li>
+
+              <li class='disabled'><a href='javascript:void(null);'>t
+                  menu.item.views.noViews</a></li>
+
+            </div>
+          </ul>
+
+        </div>
+        {{!views menu end}}
+
+        <div class='navbar-nav navbar-right cluster-notifications'>
+          {{! bg label }}
+          <a href='#' class='bg-label'>
+            <span class='glyphicon glyphicon-cog'></span>
+            <span id='span-bg-operation-count'>
+              t
+            </span>
+
+          </a>
+          {{! bg label end }}
+
+          {{! new alerts label }}
+
+          <span class='notifications-group'>
+            <span class='alerts-label dropdown-toggle' data-toggle='dropdown'>
+              <span class='glyphicon glyphicon-bell'></span>
+
+            </span>
+            <div id='notifications-dropdown' class='dropdown-menu row'>
+              view App.AlertInstancesPopupView
+            </div>
+          </span>
+
+        </div>
+
+        <div class='navbar-nav navbar-text navbar-right brand-wrapper'>
+          {{! cluster name }}
+          <div class='cluster-name'>
+
+            <span>c</span>
+          </div>
+          {{! cluster name end }}
+        </div>
+      </div>
+    </nav>
   </div>
 
-  <div class="container main-container">
-    <div id="content">
-     test
+  <div class='container main-container'>
+    <div id='content'>
+      {{yield}}
     </div>
   </div>
 </div>

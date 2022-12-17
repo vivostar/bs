@@ -1,3 +1,73 @@
-<ul class="nav side-nav-menu nav-pills nav-stacked">
-  <li class="mainmenu-li">test</li>
+<ul class='nav side-nav-menu nav-pills nav-stacked'>
+  <li class='mainmenu-li'>
+    <LinkTo @route='dashboard' data-original-title='Dashboard'>
+      <span class='navigation-icon glyphicon glyphicon-home'></span>
+      <span class='navigation-menu-item'>Dashboard</span>
+    </LinkTo>
+  </li>
+  <li class='mainmenu-li dropdown has-sub-menu'>
+    <LinkTo
+      @route='index'
+      data-toggle='collapse-sub-menu'
+      data-original-title='Services'
+    >
+      <span class='toggle-icon glyphicon pull-right glyphicon-menu-down'></span>
+      <span class='navigation-icon glyphicon glyphicon-briefcase'></span>
+      <span class='navigation-menu-item'>Services</span>
+    </LinkTo>
+    <ul
+      class='sub-menu nav nav-pills nav-stacked services-submenu'
+      style='position: relative; top: 0px; left: 0px; display: block;'
+    >
+      <li class='submenu-li'>
+        <LinkTo @route='index' class='services-menu-blocks'>
+          <span class='pull-right alerts-block'>
+            <div class='alert-badge medium-size'>
+            </div>
+          </span>
+          <span class='pull-right'></span>
+          <span class='pull-right'></span>
+          <i class='icon-circle status-icon started'></i>
+          <span
+            class='menu-item-name STARTED'
+            data-original-title='NameNode Started<br/>SNameNode Started<br/>'
+          >
+            HDFS CLIENT
+          </span>
+        </LinkTo>
+      </li>
+      <li class='submenu-li'>
+        <LinkTo @route='index' class='services-menu-blocks'>
+          <span class='pull-right alerts-block'>
+            <div class='alert-badge medium-size'>
+              <span class='counter label alerts-crit-count position-middle'>
+                2
+              </span>
+            </div>
+          </span>
+          <span class='pull-right'></span>
+          <span class='pull-right'></span>
+          <i class='icon-circle status-icon started'></i>
+          <span
+            class='menu-item-name STARTED'
+            data-original-title='NameNode Started<br/>SNameNode Started<br/>'
+          >
+            YARN CLIENT
+          </span>
+        </LinkTo>
+      </li>
+    </ul>
+  </li>
+  <li class='mainmenu-li'>
+    <LinkTo @route='hosts' data-original-title='Hosts'>
+      <span class='navigation-icon icon-tasks'></span>
+      <span class='navigation-menu-item'>Hosts</span>
+    </LinkTo>
+  </li>
+  <li class='mainmenu-li'>
+    <LinkTo @route='alerts' data-original-title='Alerts'>
+      <span class='navigation-icon glyphicon glyphicon-bell'></span>
+      <span class='navigation-menu-item'>Alerts</span>
+    </LinkTo>
+  </li>
 </ul>

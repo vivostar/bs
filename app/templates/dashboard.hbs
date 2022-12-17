@@ -1,0 +1,123 @@
+{{page-title 'Dashboard'}}
+<div class='row'>
+
+  <div class='summary-width col-md-12' id='dashboard-widgets-container'>
+    <ul class='nav nav-tabs background-text'>
+      <li id='dashboard-view-tab-metrics' class='active'>
+        <a href='#'>METRICS</a>
+      </li>
+      <li id='dashboard-view-tab-heatmaps'>
+        <a href='#'>HEATMAPS</a>
+      </li>
+      <li id='dashboard-view-tab-history'>
+        <a href='#'>HISTORY</a>
+      </li>
+    </ul>
+    <div class='btn-toolbar' role='toolbar'>
+      <div
+        id='widgets-options-menu'
+        class='widgets-options-menu dropdown btn-group pull-left'
+      >
+        <button class='btn btn-default dropdown-toggle' data-toggle='dropdown'>
+          <span>Metrics Actions</span>
+          <span class='caret'></span>
+        </button>
+        <ul class='dropdown-menu'>
+          <li class='add-widgets-text dropdown-submenu pull-left'>
+            <a href='#'>
+              <i class='glyphicon glyphicon-plus'></i>
+              <span>Add</span>
+            </a>
+
+          </li>
+        </ul>
+      </div>
+      <div class='btn-group pull-left'>
+        <button
+          type='button'
+          class='btn btn-default dropdown-toggle'
+          data-toggle='dropdown'
+        >
+          last 1 hour
+          <span class='caret'></span>
+        </button>
+        <ul class='dropdown-menu'>
+          <li><a href='#'>Last 1 hour</a></li>
+          <li><a href='#'>Last 2 hours</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='dashboard-widgets-box'>
+      <div id='dashboard-widgets' class='widgets-container dashboard-widgets'>
+        <div class='thumbnails ui-sortable' id='sortable'>
+          <div class='span2p4' viewid='widget-1'>
+
+            <div class='has-hidden-info'>
+              <ul class='list-unstyled'>
+                <li class='img-thumbnail row'>
+
+                  <div class='caption col-md-10'>heeee</div>
+
+                  <div class='corner-icon col-md-1'>
+                    <button
+                      class='dropdown-toggle ellipsis-menu button-border'
+                      data-toggle='dropdown'
+                      href='#'
+                    ></button>
+                    <ul class='dropdown-menu'>
+                      <li><button
+                          type='button'
+                          href='#'
+                          class='button-border'
+                          data-ember-action='568'
+                        >
+                          <i class='icon-pencil'></i>&nbsp;<span
+                            id='i18n-169'
+                          >Edit</span></button>
+                      </li>
+                      <li><button
+                          type='button'
+                          href='#'
+                          class='button-border'
+                          data-ember-action='569'
+                        >
+                          <i class='icon-trash'></i>&nbsp;<span
+                            id='i18n-170'
+                          >Delete</span></button>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div
+                    class='hidden-info-general hidden-info-two-line'
+                    data-bindattr-570='570'
+                  >
+                    <table align='center'>
+
+                      <tbody>
+                        <tr>
+                          <td>aaaa</td>
+                        </tr>
+
+                        <tr>
+                          <td></td>
+                        </tr>
+                      </tbody>
+
+                    </table>
+                  </div>
+
+                  <div class='widget-content-isNA'><span>n/a</span></div>
+
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
